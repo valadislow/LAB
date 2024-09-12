@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="variable"></div>
+    <div class="percentage"></div>
+</body>
+
+    <script>
+        let number = parseInt(prompt("Please enter the number"))
+        let activeNumber = document.querySelector('.variable');
+        activeNumber.innerHTML = `Quantity: ${number}`;
+
+        let percentage = parseInt(prompt("Please enter the percentage"))
+        numberWPercentage = document.querySelector('.percentage')
+        numberWPercentage.innerHTML = percentage + "% of " + number + " = " + ((percentage/100)*number)
+
+
+    </script>
+
+</html>
